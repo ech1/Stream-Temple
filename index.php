@@ -44,7 +44,9 @@ foreach($fileList as $filename){
 	if(is_file($filename) and preg_match($ext,$filename)){	
 		$pattern = "/\/mnt\/hls\//i";
 		$coollink=preg_replace($pattern, "" ,$filename );
-		echo '<p class="shortcut">',$coollink,' <a target="_blank" rel="noopener noreferrer"    class="secret2" href="player.php?megacoollink=',$coollink, '">','player',' </a></p><br>'; 
+		$urlfull =$url; 
+		$urlfull.= $coollink;
+		echo '<p class="shortcut">',$coollink,' <a target="_blank" rel="noopener noreferrer"    class="secret2" href="player.php?megacoollink=',$coollink, '">','[player]','</a>     <a  target="_blank" rel="noopener noreferrer"    class="secret2"     href="',$urlfull,'">[Direct Link]</a></p><br>'; 
 	}   
 }
 ?>
