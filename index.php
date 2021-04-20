@@ -5,19 +5,15 @@
        <title>Temple</title>
 	<link href="assets/css/main.css"  rel="stylesheet" >
 	<link href="assets/style.css" rel="stylesheet" >
-<!--	<link rel="shortcut icon" type="image/png" href="temple.png"/>-->
 	<link rel="icon" type="image/png" href="temple.png">
    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="icons/void.yt.png">
+    <link rel="shortcut icon" href="temple.png">
 
-    <meta property="og:title" content="void.yt" />
-    <meta property="og:type" content="website" />
     <meta property="og:image" content="temple.png" />
-    <meta property="og:description" content="Digital Toolkit from Nowhere" />
     <meta name="theme-color" content="#492832">
 
 
