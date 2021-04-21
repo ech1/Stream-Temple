@@ -35,7 +35,7 @@
  </br>
  </br>
 	
-<img src="temple.png" style="width:200px"></br>
+<a href="https://github.com/ech1/Stream-Temple"><img src="temple.png" style="width:200px"></a>  </br>
 
  </br>
  </br>
@@ -63,7 +63,9 @@ foreach($fileList as $filename){
 		$coollink=preg_replace($pattern, "" ,$filename );
 		$urlfull =$url; 
 		$urlfull.= $coollink;
-		echo '<p class="shortcut">',$coollink,' <a target="_blank" rel="noopener noreferrer"    class="secret2" href="player.php?megacoollink=',$coollink, '">','[player]','</a>     <a  target="_blank" rel="noopener noreferrer"    class="secret2"     href="',$urlfull,'">[Direct Link]</a></p><br>'; 
+		
+			
+		echo '<p class="shortcut">',$urlfull,' <a target="_blank" rel="noopener noreferrer"    class="secret2" href="player.php?megacoollink=',$coollink, '">','[player]</p><br>'; 
 	}   
 }
 ?>
