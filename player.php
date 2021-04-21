@@ -12,6 +12,7 @@ $url.= ":4443/";
 
 
 $url.=$_GET["megacoollink"];  ?>
+//pass the php variable that contains the FULL https://link:4443/stream.m3u8 to the javascript below to be played in the hls browser script:
 <script> coollink = "<?php echo $url; ?>";</script>
 
 
@@ -19,10 +20,6 @@ $url.=$_GET["megacoollink"];  ?>
  </head>
 <body style="background-color:black">
 
-<!--
-	<video src="https://temple.void.yt/nothing.m3u8">
-	-->
-<!--	display: block;-->
 	<style>
 		video {
 			margin: 0 auto;

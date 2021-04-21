@@ -49,7 +49,6 @@ $url = "https://";
 $url.= $_SERVER['HTTP_HOST'];   
 // Append the PORT
 $url.= ":4443";
-//         
 // Append the requested resource location to the URL   
 $url.= $_SERVER['REQUEST_URI'];    
 
@@ -63,17 +62,12 @@ foreach($fileList as $filename){
 		$coollink=preg_replace($pattern, "" ,$filename );
 		$urlfull =$url; 
 		$urlfull.= $coollink;
-		
 			
 		echo '<p class="shortcut">',$urlfull,' <a target="_blank" rel="noopener noreferrer"    class="secret2" href="player.php?megacoollink=',$coollink, '">','[player]</p><br>'; 
 	}   
 }
 ?>
 
-<!--
-
-//		echo '<p class="shortcut">',$url,preg_replace($pattern, "" ,$filename ), '</p><br>'; 
--->
 
 
 
