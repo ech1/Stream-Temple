@@ -1,5 +1,5 @@
 # Stream-Temple
-![Alt text](temple.png = width=250)
+![Alt text](temple.png){:height="250px" width="250px"}
 This is a repository dedicated to the streaming solution i primarily made for [Swamp Servers] https://swampservers.net/ 
 
 #Link to the full installation guide
