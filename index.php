@@ -63,7 +63,7 @@ foreach($fileList as $filename){
 		$urlfull =$url; 
 		$urlfull.= $coollink;
 			
-		echo '<p class="shortcut">',$urlfull,' <a target="_blank" rel="noopener noreferrer"    class="secret2" href="player.php?megacoollink=',$coollink, '">','[player]</p><br>'; 
+		echo '<p class="shortcut">',$urlfull,' <a target="_blank" rel="noopener noreferrer"    class="secret2" href="player.php?megacoollink=',$coollink, '">','[player]</a></p><br>'; 
 	}   
 }
 ?>
