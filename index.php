@@ -53,6 +53,14 @@ $url.= ":4443";
 $url.= $_SERVER['REQUEST_URI'];    
 
 
+$url2 = "http://";   
+// Append the host(domain name, ip) to the URL.   
+$url2.= $_SERVER['HTTP_HOST'];   
+// Append the PORT
+$url2.= ":8080";
+// Append the requested resource location to the URL   
+$url2.= $_SERVER['REQUEST_URI'];    
+
 $path= '/mnt/hls/*';
 $ext = '/\.m3u8/i';
 $fileList = glob($path);
@@ -63,7 +71,13 @@ foreach($fileList as $filename){
 		$urlfull =$url; 
 		$urlfull.= $coollink;
 			
-		echo '<p class="shortcut">',$urlfull,' <a target="_blank" rel="noopener noreferrer"    class="secret2" href="player.php?megacoollink=',$coollink, '">','[player]</a></p><br>'; 
+		$pattern2 = "/\/mnt\/hls\//i";
+		$coollink2=preg_replace($pattern2, "" ,$filename );
+		$urlfull2 =$url2; 
+		$urlfull2.= $coollink2;
+
+		echo '<p class="shortcut">',$urlfull,' <a target="_blank" rel="noopener noreferrer"    class="secret2" href="player.php?megacoollink=',$coollink, '">','[player]</a></br>'; 
+		echo $urlfull2,' (SC link)</br></p>'; 
 	}   
 }
 ?>
