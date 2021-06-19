@@ -3,7 +3,7 @@
 This is a repository dedicated to the streaming solution i primarily made for the various players on<a href="https://swampservers.net/"> Swamp Servers</a> that don't want to go through popular streaming solutions like Twitch or Youtube. The idea is to have a reliable, easy to use and intuitive VPS-Hosted solution to ensure that one can effectively get rid of popular streaming platforms.
 
 ## Link to the full installation guide
-This is a repository configured for this one HLS Setup i made a guide for. It uses ports 443, 1935 and 4443 respectively. Follow the guide for more information on how it works.
+This is a repository configured for this one HLS Setup i made a guide for. It uses ports 443, 1935, 8080 and 4443 respectively. Follow the guide for more information on how it works.
 https://blog.void.yt/servers/hls/index.html
 
 ## Contributions
